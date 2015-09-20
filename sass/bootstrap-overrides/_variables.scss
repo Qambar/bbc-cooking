@@ -1,0 +1,70 @@
+// Colours
+$dark-grey:                             #90887E !default;
+$darker-grey:                           darken($dark-grey, 10%) !default;
+$light-grey:                            #eaeaea !default;
+$header-bg:                             $light-grey !default;
+
+$branding-tool-green:                   #5AA567 !default;
+$branding-tool-red:                     #FF0067 !default;
+
+$body-bg:                               #f0f0f0 !default;
+$hr-border:                             $branding-tool-green !default;
+
+// Subnav
+$subnav-bg:                             $dark-grey !default;
+$subnav-active-bg:                      #fff !default;
+$subnav-active-color:                   #000 !default;
+$subnav-hover-bg:                       $light-grey !default;
+$subnav-hover-color:                    #000 !default;
+
+// Navbar
+$navbar-height:                         40px !default;
+$navbar-default-bg:                     $branding-tool-green !default;
+$navbar-default-color:                  #fff !default;
+$navbar-default-link-color:             #fff !default;
+$navbar-default-link-active-bg:         #fff !default;
+$navbar-default-link-active-color:      #000 !default;
+$navbar-default-toggle-hover-bg:        lighten($subnav-bg, 15%) !default;
+$navbar-default-toggle-icon-bar-bg:     lighten($subnav-bg, 35%) !default;
+$navbar-default-toggle-border-color:    lighten($subnav-bg, 35%) !default;
+$navbar-default-brand-color:            $navbar-default-link-color !default;
+$navbar-default-brand-hover-color:      $navbar-default-brand-color;
+$navbar-default-brand-hover-bg:         $branding-tool-green;
+$navbar-inverse-bg:                     #fff !default;
+$navbar-inverse-color:                  #333 !default;
+$navbar-inverse-link-color:             #333 !default;
+$navbar-inverse-link-hover-color:       #333 !default;
+$navbar-inverse-brand-color:            $navbar-default-link-color !default;
+$navbar-inverse-brand-hover-color:      $navbar-default-brand-color;
+$navbar-inverse-brand-hover-bg:         $branding-tool-green;
+$navbar-border-radius:                  0 !default;
+$navbar-margin-bottom:                  0 !default;
+
+// Grid
+$row-spacing: 10px !default;
+$grid-columns: 12 !default;
+$grid-gutter-width: 16px !default;
+
+// Breakpoints
+$container-tablet:                      ((752px + $grid-gutter-width)) !default;
+$container-sm:                          $container-tablet !default;
+$container-desktop:                     ((978px + $grid-gutter-width)) !default;
+$container-md:                          $container-desktop !default;
+$container-large-desktop:               ((1000px + $grid-gutter-width)) !default;
+$container-lg:                          $container-large-desktop !default;
+
+// Icons
+$icon-gel-font-name:                    'gelnewsicons-regular-webfont' !default;
+
+// Validation
+$state-validation-bg:                   #fff6C6 !default;
+
+//Buttons
+
+$btn-default-bg:                 #808080 !default;
+$btn-default-color:              #FFFFFF !default;
+$btn-default-border:             transparent !default;
+
+$btn-primary-color:              #FFFFFF;
+$btn-primary-bg:                 #2FB9D8;
+$btn-primary-border:             transparent;

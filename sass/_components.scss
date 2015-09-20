@@ -1,0 +1,15 @@
+/**
+ * Component listing.
+ *
+ * This listing is common across the standard and ie-specific stylesheets
+ */
+
+// Variables come first, as they may define things used in our libraries
+
+// BBC-Bootstrap Color Overrides
+@import "bootstrap-overrides/variables";
+
+// Libraries
+
+@import "../node_modules/bootstrap-sass/assets/stylesheets/bootstrap";
+
