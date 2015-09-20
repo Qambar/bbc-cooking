@@ -4,7 +4,7 @@ class ListPage < Base
     end
 
     def visit
-        super "/list.html"
+        super "?page=list"
     end
 end
 
