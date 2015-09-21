@@ -1,5 +1,5 @@
 sassFiles = {
-    'static/css/style.css': 'sass/global.scss'
+    'static/css/styles.css': 'sass/global.scss'
 }
 
 module.exports = function(grunt) {
@@ -20,7 +20,7 @@ module.exports = function(grunt) {
         },
         watch: {
             sass: {
-                files: 'sass/*.scss',
+                files: 'sass/**/*.scss',
                 tasks: ['sass:dev']
             }
         }
