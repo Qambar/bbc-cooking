@@ -1,0 +1,17 @@
+.table {
+  display:table;
+}
+.header {
+  display:table-header-group;
+  font-weight:bold;
+}
+.row {
+  display:table-row;
+}
+.rowGroup {
+  display:table-row-group;
+}
+.cell {
+  display:table-cell;
+  width:25%;
+}
