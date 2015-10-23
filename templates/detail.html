@@ -10,5 +10,15 @@
 <div>
     <h1>Ingredients</h1>
     {{group}}
-    {{ingredients}}
+    {{#ingredients}}
+        <ul>{{#.}}<li>{{.}}</li>{{/.}}</ul>
+    {{/ingredients}}
+
+</div>
+
+<div>
+    <h1>Preparation Method</h1>
+    {{#method}}
+    <ul>{{#.}}<li>{{.}}</li>{{/.}}</ul>
+    {{/method}}
 </div>

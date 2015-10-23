@@ -13,11 +13,18 @@ var pageLoader = {
         }
 
         $.get(this.baseTemplate + this.page + '.html', function( template ) {
-            console.log(dataFilename, template);
             if (typeof dataFilename !== 'undefined') {
                 $.getJSON(_self.baseRecipe + dataFilename + ".json", function (data) {
-                    console.log(data);
+
+                    if (data instanceof Array) {
+                        data.forEach( function (o, i) {
+                            o.url = (o.name).replace(/ /g, "-").toLowerCase();
+                            o.url = (o.url).replace(/'/g, "");
+                        });
+                        data = {'data' : data};
+                    }
                     _self.render(template, data);
+
                 });
             } else{
                 _self.render(template);
