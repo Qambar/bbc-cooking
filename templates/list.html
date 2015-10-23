@@ -1,22 +1,21 @@
 {{#data.0}}
-<div class="table">
-    <div class="header">
-        <div class="cell">Address</div>
-        <div class="cell">Name</div>
+<table id="recipe-list" class="display" cellspacing="0" width="100%">
 
-    </div>
-
+    <thead>
+    <tr>
+        <th></th>
+        <th></th>
+        <th>Sort by Cooking Time</th>
+    </tr>
+    </thead>
     {{#data}}
-    <a href="index.html?page=detail&data={{url}}" class="rowGroup" >
-        <div class="row">
-            <div class="cell"><img src="{{image}}" alt="{{name}}" /></div>
-            <div class="cell">{{name}}</div>
-            <div class="cell">{{cookingTime}}</div>
-        </div>
-    </a>
+    <tr onClick="window.location='index.html?page=detail&data={{url}}'">
+        <td class="cell"><img src="{{image}}" alt="{{name}}" /></td>
+        <td class="cell">{{name}}</td>
+        <td class="cell">{{cookingTime}}</td>
+    </tr>
     {{/data}}
-
-</div>
+</table>
 {{/data.0}}
 {{^data.0}}Sorry, we currently have no recipes for you.{{/data.0}}
 

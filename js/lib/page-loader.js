@@ -21,10 +21,11 @@ var pageLoader = {
                             o.url = (o.name).replace(/ /g, "-").toLowerCase();
                             o.url = (o.url).replace(/'/g, "");
                         });
+
                         data = {'data' : data};
                     }
-                    _self.render(template, data);
 
+                    _self.render(template, data);
                 });
             } else{
                 _self.render(template);
@@ -36,5 +37,5 @@ var pageLoader = {
     render: function(template, data) {
         var rendered = Mustache.render(template, data);
         $('#content').html(rendered);
-    },
+    }
 };

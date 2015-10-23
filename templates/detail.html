@@ -9,11 +9,22 @@
 </div>
 <div>
     <h1>Ingredients</h1>
-    {{group}}
-    {{#ingredients}}
-        <ul>{{#.}}<li>{{.}}</li>{{/.}}</ul>
-    {{/ingredients}}
 
+    {{#ingredients}}
+    <ul>
+        {{^group}}
+            {{.}}
+        {{/group}}
+        {{#group}}
+            <li>{{.}}</li>
+            <ul>
+                {{#ingredients}}
+                    <li>{{.}}</li>
+                {{/ingredients}}
+            </ul>
+        {{/group}}
+    </ul>
+    {{/ingredients}}
 </div>
 
 <div>
